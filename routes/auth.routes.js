@@ -25,6 +25,8 @@ router.post("/auth/login", async (req, res) => {
     const user = await User.findOne({ email: req.body.email });
     if (user) {
         if(user.password === req.body.password){
+            res.cookie("user_type", req.body.user_type);
+            res.cookie("user_id", user._id);
             res.status(200).json(user);
         }
         else{

@@ -21,5 +21,9 @@ export const companySchema = new Schema({
     discussions:{
         type: Schema.Types.Array,
         required: false
+    },
+    owner_id:{
+        type: Schema.Types.String,
+        required: false
     }
 },{ collection: "companies" });

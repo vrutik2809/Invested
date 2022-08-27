@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/css/main_style.css" />
+  <title>Login</title>
 </head>
+
 <body>
 
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-            <h1 class="title-font font-medium text-3xl text-gray-900">Slow-carb next level shoindcgoitch ethical authentic, poko scenester</h1>
-            <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
+  <header>
+    <nav>
+      <a href="/"><h1>In<span>vested</span></h1></a>
+    </nav>
+  </header>
+  &nbsp;
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+        <h1 class="title-font font-medium text-3xl text-gray-900">Welcome to Invested Login Portal</h1>
+        <br>
+        <br>
+        <p class="leading-relaxed mt-4 ml-10">Grow your Business as a Founder by getting investment from Top Investor.<br>Grow your Portfolio as a Investor by investing in Top Company.</p>
+      </div>
+      <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign In</h2>
+        <div class="relative mb-4">
+          <label for="full-name" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Password</label>
+          <input type="password" id="password" name="password"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <div class="flex items-center mb-4">
+            <input checked id="user_role_1" type="radio" value="Investor" name="work"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-1"
+              class="ml-2 text-sm font-medium text-livvic-900 dark:text-gray-300">Invester</label>
           </div>
-          <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign In</h2>
-            <div class="relative mb-4">
-              <label for="full-name" class="leading-7 text-sm text-gray-600">Email</label>
-              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm text-gray-600">Password</label>
-              <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-            <div class="relative mb-4">
-            <div class="flex items-center mb-4">
-                <input checked id="user_role_1" type="radio" value="Investor" name="work" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                <label for="default-radio-1" class="ml-2 text-sm font-medium text-livvic-900 dark:text-gray-300">Invester</label>
-            </div>
-            <div class="flex items-center">
-                <input id="user_role_2" type="radio" value="Founder" name="work" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                <label for="default-radio-2" class="ml-2 text-sm font-medium text-livvic-900 dark:text-gray-300">Founder</label>
-            </div>
-            </div>
-            <button id="btn-s" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login</button>
-            <p class="text-xs text-gray-500 mt-3">Don't have an account ? <a href="/auth/create">Sign Up</a></p>
+          <div class="flex items-center">
+            <input id="user_role_2" type="radio" value="Founder" name="work"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-radio-2"
+              class="ml-2 text-sm font-medium text-livvic-900 dark:text-gray-300">Founder</label>
           </div>
         </div>
-      </section>
+        <button id="bett" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login</button>
+        <p class="text-xs text-gray-500 mt-3">Don't have an account ? <a href="/auth/create">Sign Up</a></p>
+      </div>
+    </div>
+  </section>
 </body>
 
 
 <script>
-  const btn = document.getElementById("btn-s");
-     async function loginUser(){
-         const email = String(document.getElementById("email").value);
-         const password = String(document.getElementById("password").value);
-   
-         // const username = btn.dataset.user;
-         const data = {email,password};
-         const response = await fetch("/auth/login",{
-             method:"post",
-             headers:{
-                 "Content-Type":"application/json"
-             },
-             body:JSON.stringify(data)
-         });
-         const result = await response.json();
-         const user_type = document.getElementById("user_role_1").checked ? "Investor" : "Founder";
-         window.location.href = `/?user_type=${user_type}`;
-     }
-     btn.addEventListener('click',loginUser);
- </script>
+  const btn = document.getElementById("bett");
+  async function loginUser() {
+    const email = String(document.getElementById("email").value);
+    const password = String(document.getElementById("password").value);
+    const user_type = document.getElementById("user_role_1").checked ? "Investor" : "Founder";
+
+    // const username = btn.dataset.user;
+    const data = { email, password, user_type };
+    const response = await fetch("/auth/login", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    window.location.href = `/`;
+  }
+  btn.addEventListener('click', loginUser);
+</script>
+
 </html>

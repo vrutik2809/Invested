@@ -4,6 +4,10 @@
   border: 2px solid black;
 }
 
+.card:hover{
+  
+}
+
 .limit{
   max-width: 300px;
   
@@ -11,6 +15,7 @@
 
 .card-title{
   font-size: 170%;
+  text-transform: capitalize;
 }
 
 .card-subtitle{
