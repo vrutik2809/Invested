@@ -1,0 +1,32 @@
+.card{
+  margin: 20px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.limit{
+  max-width: 300px;
+  
+}
+
+.card-title{
+  font-size: 170%;
+}
+
+.card-subtitle{
+  font-size: 140%;
+}
+
+.card-text{
+  font-size: 120%;
+}
+
+#invest-btn{
+  color: white;
+  font-size: 130%;
+  text-decoration: none;
+  padding: 10px 25px ;
+  border: 2px solid black;
+  border-radius: 30px;
+  background-color: black;
+}
